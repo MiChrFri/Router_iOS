@@ -22,6 +22,14 @@
 		79F494B721B296BC00C9F50C /* PersonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494B621B296BC00C9F50C /* PersonClient.swift */; };
 		79F494B921B2988700C9F50C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494B821B2988700C9F50C /* Router.swift */; };
 		79F494BB21B2B1E100C9F50C /* UIViewController+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */; };
+		C084083E21B2EB0A00DBAFEA /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084083D21B2EB0A00DBAFEA /* RouterFactory.swift */; };
+		C084084021B2EBA700DBAFEA /* RoutingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084083F21B2EBA700DBAFEA /* RoutingRule.swift */; };
+		C084084221B2EBD200DBAFEA /* LoginRoutingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084121B2EBD200DBAFEA /* LoginRoutingRule.swift */; };
+		C084084421B2EC7F00DBAFEA /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084321B2EC7F00DBAFEA /* ApplicationView.swift */; };
+		C084084621B2EF0700DBAFEA /* AnotherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084521B2EF0700DBAFEA /* AnotherRouter.swift */; };
+		C084084921B2EFF000DBAFEA /* iOSApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084821B2EFF000DBAFEA /* iOSApplicationView.swift */; };
+		C084084D21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084C21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift */; };
+		C084084F21B2F5F500DBAFEA /* MainRoutingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084084E21B2F5F500DBAFEA /* MainRoutingRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,14 @@
 		79F494B621B296BC00C9F50C /* PersonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonClient.swift; sourceTree = "<group>"; };
 		79F494B821B2988700C9F50C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tag.swift"; sourceTree = "<group>"; };
+		C084083D21B2EB0A00DBAFEA /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
+		C084083F21B2EBA700DBAFEA /* RoutingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingRule.swift; sourceTree = "<group>"; };
+		C084084121B2EBD200DBAFEA /* LoginRoutingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoutingRule.swift; sourceTree = "<group>"; };
+		C084084321B2EC7F00DBAFEA /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+		C084084521B2EF0700DBAFEA /* AnotherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherRouter.swift; sourceTree = "<group>"; };
+		C084084821B2EFF000DBAFEA /* iOSApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApplicationView.swift; sourceTree = "<group>"; };
+		C084084C21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusiveRoutingRule.swift; sourceTree = "<group>"; };
+		C084084E21B2F5F500DBAFEA /* MainRoutingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoutingRule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 				79F494B421B2968E00C9F50C /* Person.swift */,
 				79F494B621B296BC00C9F50C /* PersonClient.swift */,
 				79F494B821B2988700C9F50C /* Router.swift */,
+				C084084721B2EF3800DBAFEA /* ConditionalRouting */,
 			);
 			path = RouterTests;
 			sourceTree = "<group>";
@@ -129,6 +146,21 @@
 				79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C084084721B2EF3800DBAFEA /* ConditionalRouting */ = {
+			isa = PBXGroup;
+			children = (
+				C084083D21B2EB0A00DBAFEA /* RouterFactory.swift */,
+				C084083F21B2EBA700DBAFEA /* RoutingRule.swift */,
+				C084084121B2EBD200DBAFEA /* LoginRoutingRule.swift */,
+				C084084321B2EC7F00DBAFEA /* ApplicationView.swift */,
+				C084084521B2EF0700DBAFEA /* AnotherRouter.swift */,
+				C084084821B2EFF000DBAFEA /* iOSApplicationView.swift */,
+				C084084C21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift */,
+				C084084E21B2F5F500DBAFEA /* MainRoutingRule.swift */,
+			);
+			path = ConditionalRouting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,15 +266,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C084084021B2EBA700DBAFEA /* RoutingRule.swift in Sources */,
 				79F494A121B1AF1800C9F50C /* VC1.swift in Sources */,
+				C084084421B2EC7F00DBAFEA /* ApplicationView.swift in Sources */,
+				C084084D21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift in Sources */,
+				C084084221B2EBD200DBAFEA /* LoginRoutingRule.swift in Sources */,
+				C084084621B2EF0700DBAFEA /* AnotherRouter.swift in Sources */,
 				79F494B921B2988700C9F50C /* Router.swift in Sources */,
 				79F494BB21B2B1E100C9F50C /* UIViewController+Tag.swift in Sources */,
 				79F494B721B296BC00C9F50C /* PersonClient.swift in Sources */,
 				79F4948221B1AEBA00C9F50C /* VCStack.swift in Sources */,
+				C084083E21B2EB0A00DBAFEA /* RouterFactory.swift in Sources */,
 				79F494AA21B1AF4F00C9F50C /* VC3.swift in Sources */,
 				79F4948021B1AEBA00C9F50C /* AppDelegate.swift in Sources */,
+				C084084F21B2F5F500DBAFEA /* MainRoutingRule.swift in Sources */,
 				79F494B521B2968E00C9F50C /* Person.swift in Sources */,
 				79F494A521B1AF2C00C9F50C /* VC2.swift in Sources */,
+				C084084921B2EFF000DBAFEA /* iOSApplicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
