@@ -48,8 +48,6 @@ class Router {
             window.rootViewController = UINavigationController(rootViewController: vc)
         }
         
-        print(window.rootViewController as? UINavigationController)
-        
         updateVcMap()
     }
     

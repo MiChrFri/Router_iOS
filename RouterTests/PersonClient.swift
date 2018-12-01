@@ -8,10 +8,11 @@ class PersonClient {
     }
     
     private func fetchPerson() -> Person {
-        print("")
+        print("Fetching Person...🕐")
         sleep(2)
         let person = Person(name: "Michael", age: 30)
         self.person = person
+        print("Person fetched ✅")
         return person
     }
     
