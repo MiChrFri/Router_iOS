@@ -20,5 +20,17 @@ class VC3: UIViewController {
     @IBAction func next(_ sender: Any) {
         router.routeToVC1()
     }
+
+    /**
+     * By switching the argument passed to the factory (logged / notLogged Person)
+     * we go to two different controllers
+     */
+    @IBAction func conditionalNext(_ sender: Any) {
+        //let notLoggedPerson = Person(name: "MikaWithCredentials :D", age: 30, credentials: nil)
+        let loggedPerson = Person(name: "MikaWithCredentials :D", age: 30, credentials: "Valid Credentials")
+        let bootRouter =  RouterFactory.buildBootRouter(person: loggedPerson, applicationView: iOSApplicationView(viewController: self))
+        bootRouter.route()
+    }
+
     
 }
