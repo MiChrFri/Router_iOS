@@ -10,7 +10,7 @@ class WeatherTodayRouter: Router {}
 extension WeatherTodayRouter: WeatherTodayRouteable {
     
     func dropToHome() {
-        if let homeVc = viewControllerFactory.viewControllers.first(where: { $0.hashValue == viewControllerFactory.routesMap[VcTag.home] }) {
+        if let homeVc = getViewController(forTag: .home) {
             dropToVc(vc: homeVc)
         } else {
             routeToHome()

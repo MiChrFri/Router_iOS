@@ -8,7 +8,10 @@ class ViewControllerFactory {
     
     init(withWindow window: UIWindow) {
         self.window = window
-        self.window.rootViewController = UINavigationController(rootViewController: createHomeViewController())
+        
+        let homeViewController = createHomeViewController()
+        self.window.rootViewController = UINavigationController(rootViewController: homeViewController)
+        routesMap[.home] = homeViewController.hashValue
     }
 
     func createHomeViewController() -> HomeViewController {

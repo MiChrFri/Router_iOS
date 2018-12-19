@@ -10,6 +10,10 @@ class Router {
         updateViewControllerMap()
     }
     
+    func getViewController(forTag tag :VcTag) -> UIViewController? {
+        return viewControllerFactory.viewControllers.first(where: { $0.hashValue == viewControllerFactory.routesMap[tag] })
+    }
+    
     func dropToVc(vc: UIViewController) {
         if let nav = window.rootViewController as? UINavigationController {
             nav.popToViewController(vc, animated: true)
