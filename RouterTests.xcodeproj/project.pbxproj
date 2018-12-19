@@ -12,16 +12,19 @@
 		7935A1EF21C3CC8A00F29C92 /* WeatherTodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */; };
 		7935A1F721C3CEFB00F29C92 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */; };
 		7935A1F921C3D11D00F29C92 /* WeatherApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */; };
+		797FFC0B21CA52E8002CB46A /* WeatherCompareRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FFC0A21CA52E8002CB46A /* WeatherCompareRouter.swift */; };
+		797FFC1021CA531C002CB46A /* WeatherCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FFC0E21CA531C002CB46A /* WeatherCompareViewController.swift */; };
+		797FFC1121CA531C002CB46A /* WeatherCompareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797FFC0F21CA531C002CB46A /* WeatherCompareViewController.xib */; };
+		797FFC1321CA532A002CB46A /* WeatherComparePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FFC1221CA532A002CB46A /* WeatherComparePresenter.swift */; };
+		797FFC1621CA5FEB002CB46A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FFC1521CA5FEB002CB46A /* HomeRouter.swift */; };
 		79F4948021B1AEBA00C9F50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */; };
 		79F4948721B1AEBD00C9F50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4948621B1AEBD00C9F50C /* Assets.xcassets */; };
 		79F4948A21B1AEBD00C9F50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F4948821B1AEBD00C9F50C /* LaunchScreen.storyboard */; };
 		79F4949521B1AEBD00C9F50C /* RouterTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4949421B1AEBD00C9F50C /* RouterTestsTests.swift */; };
 		79F494A121B1AF1800C9F50C /* WeatherTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */; };
 		79F494A221B1AF1800C9F50C /* WeatherTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */; };
-		79F494A521B1AF2C00C9F50C /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494A321B1AF2C00C9F50C /* VC2.swift */; };
-		79F494A621B1AF2C00C9F50C /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A421B1AF2C00C9F50C /* VC2.xib */; };
-		79F494AA21B1AF4F00C9F50C /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494A821B1AF4F00C9F50C /* VC3.swift */; };
-		79F494AB21B1AF4F00C9F50C /* VC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A921B1AF4F00C9F50C /* VC3.xib */; };
+		79F494A521B1AF2C00C9F50C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494A321B1AF2C00C9F50C /* HomeViewController.swift */; };
+		79F494A621B1AF2C00C9F50C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A421B1AF2C00C9F50C /* HomeViewController.xib */; };
 		79F494B521B2968E00C9F50C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494B421B2968E00C9F50C /* Person.swift */; };
 		79F494B721B296BC00C9F50C /* PersonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494B621B296BC00C9F50C /* PersonClient.swift */; };
 		79F494B921B2988700C9F50C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494B821B2988700C9F50C /* Router.swift */; };
@@ -52,6 +55,11 @@
 		7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTodayPresenter.swift; sourceTree = "<group>"; };
 		7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
 		7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiClient.swift; sourceTree = "<group>"; };
+		797FFC0A21CA52E8002CB46A /* WeatherCompareRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCompareRouter.swift; sourceTree = "<group>"; };
+		797FFC0E21CA531C002CB46A /* WeatherCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCompareViewController.swift; sourceTree = "<group>"; };
+		797FFC0F21CA531C002CB46A /* WeatherCompareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCompareViewController.xib; sourceTree = "<group>"; };
+		797FFC1221CA532A002CB46A /* WeatherComparePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherComparePresenter.swift; sourceTree = "<group>"; };
+		797FFC1521CA5FEB002CB46A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		79F4947C21B1AEBA00C9F50C /* RouterTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F4948621B1AEBD00C9F50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,10 +70,8 @@
 		79F4949621B1AEBD00C9F50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTodayViewController.swift; sourceTree = "<group>"; };
 		79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTodayViewController.xib; sourceTree = "<group>"; };
-		79F494A321B1AF2C00C9F50C /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
-		79F494A421B1AF2C00C9F50C /* VC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
-		79F494A821B1AF4F00C9F50C /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
-		79F494A921B1AF4F00C9F50C /* VC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC3.xib; sourceTree = "<group>"; };
+		79F494A321B1AF2C00C9F50C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		79F494A421B1AF2C00C9F50C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		79F494B421B2968E00C9F50C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		79F494B621B296BC00C9F50C /* PersonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonClient.swift; sourceTree = "<group>"; };
 		79F494B821B2988700C9F50C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -98,6 +104,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797FFC0721CA524E002CB46A /* WeatherToday */ = {
+			isa = PBXGroup;
+			children = (
+				7935A1EC21C3C77300F29C92 /* WeatherTodayRouter.swift */,
+				79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */,
+				79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */,
+				7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */,
+			);
+			path = WeatherToday;
+			sourceTree = "<group>";
+		};
+		797FFC0821CA5278002CB46A /* WeatherCompare */ = {
+			isa = PBXGroup;
+			children = (
+				797FFC0A21CA52E8002CB46A /* WeatherCompareRouter.swift */,
+				797FFC1221CA532A002CB46A /* WeatherComparePresenter.swift */,
+				797FFC0E21CA531C002CB46A /* WeatherCompareViewController.swift */,
+				797FFC0F21CA531C002CB46A /* WeatherCompareViewController.xib */,
+			);
+			path = WeatherCompare;
+			sourceTree = "<group>";
+		};
+		797FFC0921CA52B2002CB46A /* WeatherData */ = {
+			isa = PBXGroup;
+			children = (
+				7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */,
+				7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */,
+			);
+			path = WeatherData;
+			sourceTree = "<group>";
+		};
+		797FFC1421CA5C05002CB46A /* Irrelevant */ = {
+			isa = PBXGroup;
+			children = (
+				79F4948621B1AEBD00C9F50C /* Assets.xcassets */,
+				79F4948821B1AEBD00C9F50C /* LaunchScreen.storyboard */,
+				79F494B421B2968E00C9F50C /* Person.swift */,
+				79F494B621B296BC00C9F50C /* PersonClient.swift */,
+				C084084721B2EF3800DBAFEA /* ConditionalRouting */,
+			);
+			path = Irrelevant;
+			sourceTree = "<group>";
+		};
 		79F4947321B1AEBA00C9F50C = {
 			isa = PBXGroup;
 			children = (
@@ -119,20 +168,16 @@
 		79F4947E21B1AEBA00C9F50C /* RouterTests */ = {
 			isa = PBXGroup;
 			children = (
+				797FFC0921CA52B2002CB46A /* WeatherData */,
+				797FFC0821CA5278002CB46A /* WeatherCompare */,
 				79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */,
-				79F494A721B1AF3B00C9F50C /* ViewControllers */,
-				79F4948621B1AEBD00C9F50C /* Assets.xcassets */,
-				79F4948821B1AEBD00C9F50C /* LaunchScreen.storyboard */,
+				79F494A721B1AF3B00C9F50C /* Home */,
+				797FFC1421CA5C05002CB46A /* Irrelevant */,
 				79F4948B21B1AEBD00C9F50C /* Info.plist */,
-				79F494B421B2968E00C9F50C /* Person.swift */,
-				79F494B621B296BC00C9F50C /* PersonClient.swift */,
 				79F494B821B2988700C9F50C /* Router.swift */,
-				7935A1EC21C3C77300F29C92 /* WeatherTodayRouter.swift */,
+				797FFC0721CA524E002CB46A /* WeatherToday */,
 				7935A1EA21C3C6D100F29C92 /* ViewControllerFactory.swift */,
-				7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */,
-				7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */,
-				C084084721B2EF3800DBAFEA /* ConditionalRouting */,
-				7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */,
+				79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */,
 			);
 			path = RouterTests;
 			sourceTree = "<group>";
@@ -146,18 +191,14 @@
 			path = RouterTestsTests;
 			sourceTree = "<group>";
 		};
-		79F494A721B1AF3B00C9F50C /* ViewControllers */ = {
+		79F494A721B1AF3B00C9F50C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */,
-				79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */,
-				79F494A321B1AF2C00C9F50C /* VC2.swift */,
-				79F494A421B1AF2C00C9F50C /* VC2.xib */,
-				79F494A821B1AF4F00C9F50C /* VC3.swift */,
-				79F494A921B1AF4F00C9F50C /* VC3.xib */,
-				79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */,
+				79F494A321B1AF2C00C9F50C /* HomeViewController.swift */,
+				797FFC1521CA5FEB002CB46A /* HomeRouter.swift */,
+				79F494A421B1AF2C00C9F50C /* HomeViewController.xib */,
 			);
-			path = ViewControllers;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C084084721B2EF3800DBAFEA /* ConditionalRouting */ = {
@@ -256,11 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F494AB21B1AF4F00C9F50C /* VC3.xib in Resources */,
 				79F494A221B1AF1800C9F50C /* WeatherTodayViewController.xib in Resources */,
 				79F4948A21B1AEBD00C9F50C /* LaunchScreen.storyboard in Resources */,
 				79F4948721B1AEBD00C9F50C /* Assets.xcassets in Resources */,
-				79F494A621B1AF2C00C9F50C /* VC2.xib in Resources */,
+				797FFC1121CA531C002CB46A /* WeatherCompareViewController.xib in Resources */,
+				79F494A621B1AF2C00C9F50C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,14 +332,17 @@
 				7935A1F721C3CEFB00F29C92 /* WeatherInteractor.swift in Sources */,
 				79F494BB21B2B1E100C9F50C /* UIViewController+Tag.swift in Sources */,
 				79F494B721B296BC00C9F50C /* PersonClient.swift in Sources */,
+				797FFC1621CA5FEB002CB46A /* HomeRouter.swift in Sources */,
 				C084083E21B2EB0A00DBAFEA /* RouterFactory.swift in Sources */,
-				79F494AA21B1AF4F00C9F50C /* VC3.swift in Sources */,
 				79F4948021B1AEBA00C9F50C /* AppDelegate.swift in Sources */,
 				7935A1EF21C3CC8A00F29C92 /* WeatherTodayPresenter.swift in Sources */,
 				C084084F21B2F5F500DBAFEA /* MainRoutingRule.swift in Sources */,
 				79F494B521B2968E00C9F50C /* Person.swift in Sources */,
-				79F494A521B1AF2C00C9F50C /* VC2.swift in Sources */,
+				797FFC0B21CA52E8002CB46A /* WeatherCompareRouter.swift in Sources */,
+				79F494A521B1AF2C00C9F50C /* HomeViewController.swift in Sources */,
 				C084084921B2EFF000DBAFEA /* iOSApplicationView.swift in Sources */,
+				797FFC1021CA531C002CB46A /* WeatherCompareViewController.swift in Sources */,
+				797FFC1321CA532A002CB46A /* WeatherComparePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

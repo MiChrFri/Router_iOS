@@ -3,12 +3,11 @@ import UIKit
 class Router {
     private let window: UIWindow!
     let viewControllerFactory: ViewControllerFactory!
-    var viewControllers: [UIViewController] = []
-    var routesMap: [VcTag:Int] = [:]
     
     init(window: UIWindow, viewControllerFactory: ViewControllerFactory) {
         self.window = window
         self.viewControllerFactory = viewControllerFactory
+        updateViewControllerMap()
     }
     
     func dropToVc(vc: UIViewController) {
@@ -33,7 +32,7 @@ class Router {
     
     private func updateViewControllerMap() {
         if let viewControllers = (window.rootViewController as? UINavigationController)?.viewControllers {
-            self.viewControllers = viewControllers
+            viewControllerFactory.viewControllers = viewControllers
         }
     }
     

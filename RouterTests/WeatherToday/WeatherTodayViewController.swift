@@ -12,6 +12,8 @@ class WeatherTodayViewController: UIViewController {
         self.router = router
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
+        
+        print("🔅 init WeatherTodayViewController")
     }
     
     deinit {
@@ -27,9 +29,12 @@ class WeatherTodayViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: Any) {
-        router.routeToVC2()
+        router.routeToWeatherCompare()
     }
     
+    @IBAction func home(_ sender: Any) {
+        router.dropToHome()
+    }
 }
 
 extension WeatherTodayViewController: WeatherTodayViewable {
