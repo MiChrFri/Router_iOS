@@ -5,11 +5,9 @@ protocol WeatherTodayViewable: class {
 }
 
 class WeatherTodayViewController: UIViewController {
-    let router: WeatherTodayRouteable!
     let presenter: WeatherTodayPresentable!
     
-    init(withRouter router: WeatherTodayRouteable, presenter: WeatherTodayPresentable) {
-        self.router = router
+    init(withPresenter presenter: WeatherTodayPresentable) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         
@@ -29,11 +27,11 @@ class WeatherTodayViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: Any) {
-        router.routeToWeatherCompare()
+        presenter.pushWeatherCompare()
     }
     
     @IBAction func home(_ sender: Any) {
-        router.dropToHome()
+        presenter.dropToHome()
     }
 }
 

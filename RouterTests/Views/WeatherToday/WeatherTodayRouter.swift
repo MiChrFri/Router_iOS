@@ -1,33 +1,30 @@
 import UIKit
 
-protocol WeatherTodayRouteable {
-    func routeToWeatherCompare()
+protocol WeatherTodayRoutable {
+    func pushWeatherCompare()
     func dropToHome()
 }
 
 class WeatherTodayRouter: Router {}
 
-extension WeatherTodayRouter: WeatherTodayRouteable {
+extension WeatherTodayRouter: WeatherTodayRoutable {
     
     func dropToHome() {
         if let homeVc = getViewController(forTag: .home) {
-            dropTo(viewCOntroller: homeVc)
+            dropTo(viewController: homeVc)
         } else {
-            routeToHome()
+            pushHome()
         }
     }
     
-    private func routeToHome() {
+    private func pushHome() {
         let homeVc = viewControllerFactory.createHomeViewController()
-        viewControllerFactory.routesMap[.home] = homeVc.hashValue
-        
-        routeTo(viewController: homeVc)
+        push(viewController: homeVc)
     }
     
-    func routeToWeatherCompare() {
+    func pushWeatherCompare() {
         let wCVc = viewControllerFactory.createWeatherCompareViewController()
-        viewControllerFactory.routesMap[.weatherCompare] = wCVc.hashValue
-
-        routeTo(viewController: wCVc)
+        push(viewController: wCVc)
     }
+
 }

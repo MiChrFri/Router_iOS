@@ -1,24 +1,20 @@
 protocol HomeRoutable {
-    func routeToWeatherToday()
-    func routeToWeatherCompare()
+    func pushWeatherToday()
+    func pushWeatherCompare()
 }
 
 class HomeRouter: Router {}
 
 extension HomeRouter: HomeRoutable {
     
-    func routeToWeatherToday() {
+    func pushWeatherToday() {
         let wCVc = viewControllerFactory.createWeatherTodayViewController()
-        viewControllerFactory.routesMap[.weatherToday] = wCVc.hashValue
-        
-        routeTo(viewController: wCVc)
+        push(viewController: wCVc)
     }
     
-    func routeToWeatherCompare() {
+    func pushWeatherCompare() {
         let wCVc = viewControllerFactory.createWeatherCompareViewController()
-        viewControllerFactory.routesMap[.weatherCompare] = wCVc.hashValue
-        
-        routeTo(viewController: wCVc)
+        push(viewController: wCVc)
     }
 
 }

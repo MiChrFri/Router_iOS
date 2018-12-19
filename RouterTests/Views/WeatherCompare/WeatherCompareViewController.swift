@@ -5,11 +5,9 @@ protocol WeatherCompareViewable: class {
 }
 
 class WeatherCompareViewController: UIViewController {
-    let router: WeatherCompareRouteble!
     let presenter: WeatherComparePresentable!
     
-    init(withRouter router: WeatherCompareRouteble, presenter: WeatherComparePresentable) {
-        self.router = router
+    init(withPresenter presenter :WeatherComparePresentable) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         
@@ -29,11 +27,11 @@ class WeatherCompareViewController: UIViewController {
     }
 
     @IBAction func weatherToday(_ sender: Any) {
-        router.routeToWeatherToday()
+        presenter.pushWeatherToday()
     }
 
     @IBAction func home(_ sender: Any) {
-        router.dropToHome()
+        presenter.dropToHome()
     }
     
 }
@@ -41,6 +39,13 @@ class WeatherCompareViewController: UIViewController {
 extension WeatherCompareViewController: WeatherCompareViewable {
     func showUI() {
         print("🏞 more amazing UI")
+        
+        let newBackButton = UIBarButtonItem(title: "Back Home", style: UIBarButtonItem.Style.plain, target: self, action: #selector(back(sender:)))
+            self.navigationItem.leftBarButtonItem = newBackButton
+    }
+    
+    @objc func back(sender: UIBarButtonItem) {
+        presenter.dropToHome()
     }
 }
 

@@ -8,7 +8,6 @@ class WeatherApiClient: WeatherApiClientable {
     }
 }
 
-
 struct Weather {
     let temperature: Float
     let isItDarkOutSide: Bool

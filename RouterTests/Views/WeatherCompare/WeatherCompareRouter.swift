@@ -1,30 +1,35 @@
-protocol WeatherCompareRouteble {
-    func routeToWeatherToday()
+protocol WeatherCompareRoutable {
+    func pushWeatherToday()
     func dropToHome()
+    func dropToWeatherToday()
 }
 
 class WeatherCompareRouter: Router {}
 
-extension WeatherCompareRouter: WeatherCompareRouteble {
+extension WeatherCompareRouter: WeatherCompareRoutable {
     func dropToHome() {
         if let homeVc = getViewController(forTag: .home) {
-            dropTo(viewCOntroller: homeVc)
+            dropTo(viewController: homeVc)
         } else {
-            routeToHome()
+            pushHome()
         }
     }
     
-    func routeToHome() {
+    func pushHome() {
         let homeVc = viewControllerFactory.createHomeViewController()
-        viewControllerFactory.routesMap[.home] = homeVc.hashValue
-        
-        routeTo(viewController: homeVc)
+        push(viewController: homeVc)
+    }
+
+    func dropToWeatherToday() {
+        if let weatherTodayVc = getViewController(forTag: .weatherToday) {
+            dropTo(viewController: weatherTodayVc)
+        } else {
+            pushWeatherToday()
+        }
     }
     
-    func routeToWeatherToday() {
+    func pushWeatherToday() {
         let wTVc = viewControllerFactory.createWeatherTodayViewController()
-        viewControllerFactory.routesMap[.weatherToday] = wTVc.hashValue
-        
-        routeTo(viewController: wTVc)
+        push(viewController: wTVc)
     }
 }

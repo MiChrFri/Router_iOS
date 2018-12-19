@@ -1,10 +1,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    let router: HomeRoutable!
+    let presenter: HomePresenter!
     
-    init(withRouter router: HomeRoutable) {
-        self.router = router
+    init(withPresenter presenter: HomePresenter) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         print("🔅 init HomeViewController")
     }
@@ -18,11 +18,11 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func weatherToday(_ sender: Any) {
-        router.routeToWeatherToday()
+        presenter.pushWeatherToday()
     }
     
     @IBAction func weatherCompare(_ sender: Any) {
-        router.routeToWeatherCompare()
+        presenter.pushWeatherCompare()
     }
     
 }
