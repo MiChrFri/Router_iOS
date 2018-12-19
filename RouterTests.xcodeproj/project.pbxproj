@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7935A1EB21C3C6D100F29C92 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1EA21C3C6D100F29C92 /* ViewControllerFactory.swift */; };
+		7935A1ED21C3C77300F29C92 /* WeatherTodayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1EC21C3C77300F29C92 /* WeatherTodayRouter.swift */; };
+		7935A1EF21C3CC8A00F29C92 /* WeatherTodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */; };
+		7935A1F721C3CEFB00F29C92 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */; };
+		7935A1F921C3D11D00F29C92 /* WeatherApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */; };
 		79F4948021B1AEBA00C9F50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */; };
-		79F4948221B1AEBA00C9F50C /* VCStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4948121B1AEBA00C9F50C /* VCStack.swift */; };
 		79F4948721B1AEBD00C9F50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4948621B1AEBD00C9F50C /* Assets.xcassets */; };
 		79F4948A21B1AEBD00C9F50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F4948821B1AEBD00C9F50C /* LaunchScreen.storyboard */; };
 		79F4949521B1AEBD00C9F50C /* RouterTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4949421B1AEBD00C9F50C /* RouterTestsTests.swift */; };
-		79F494A121B1AF1800C9F50C /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4949F21B1AF1800C9F50C /* VC1.swift */; };
-		79F494A221B1AF1800C9F50C /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A021B1AF1800C9F50C /* VC1.xib */; };
+		79F494A121B1AF1800C9F50C /* WeatherTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */; };
+		79F494A221B1AF1800C9F50C /* WeatherTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */; };
 		79F494A521B1AF2C00C9F50C /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494A321B1AF2C00C9F50C /* VC2.swift */; };
 		79F494A621B1AF2C00C9F50C /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F494A421B1AF2C00C9F50C /* VC2.xib */; };
 		79F494AA21B1AF4F00C9F50C /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F494A821B1AF4F00C9F50C /* VC3.swift */; };
@@ -43,17 +47,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7935A1EA21C3C6D100F29C92 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		7935A1EC21C3C77300F29C92 /* WeatherTodayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTodayRouter.swift; sourceTree = "<group>"; };
+		7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTodayPresenter.swift; sourceTree = "<group>"; };
+		7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiClient.swift; sourceTree = "<group>"; };
 		79F4947C21B1AEBA00C9F50C /* RouterTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79F4948121B1AEBA00C9F50C /* VCStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStack.swift; sourceTree = "<group>"; };
 		79F4948621B1AEBD00C9F50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F4948921B1AEBD00C9F50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79F4948B21B1AEBD00C9F50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F4949021B1AEBD00C9F50C /* RouterTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F4949421B1AEBD00C9F50C /* RouterTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTestsTests.swift; sourceTree = "<group>"; };
 		79F4949621B1AEBD00C9F50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79F4949F21B1AF1800C9F50C /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
-		79F494A021B1AF1800C9F50C /* VC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
+		79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTodayViewController.swift; sourceTree = "<group>"; };
+		79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTodayViewController.xib; sourceTree = "<group>"; };
 		79F494A321B1AF2C00C9F50C /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		79F494A421B1AF2C00C9F50C /* VC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
 		79F494A821B1AF4F00C9F50C /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
@@ -112,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */,
-				79F4948121B1AEBA00C9F50C /* VCStack.swift */,
 				79F494A721B1AF3B00C9F50C /* ViewControllers */,
 				79F4948621B1AEBD00C9F50C /* Assets.xcassets */,
 				79F4948821B1AEBD00C9F50C /* LaunchScreen.storyboard */,
@@ -120,7 +127,12 @@
 				79F494B421B2968E00C9F50C /* Person.swift */,
 				79F494B621B296BC00C9F50C /* PersonClient.swift */,
 				79F494B821B2988700C9F50C /* Router.swift */,
+				7935A1EC21C3C77300F29C92 /* WeatherTodayRouter.swift */,
+				7935A1EA21C3C6D100F29C92 /* ViewControllerFactory.swift */,
+				7935A1EE21C3CC8A00F29C92 /* WeatherTodayPresenter.swift */,
+				7935A1F621C3CEFB00F29C92 /* WeatherInteractor.swift */,
 				C084084721B2EF3800DBAFEA /* ConditionalRouting */,
+				7935A1F821C3D11D00F29C92 /* WeatherApiClient.swift */,
 			);
 			path = RouterTests;
 			sourceTree = "<group>";
@@ -137,8 +149,8 @@
 		79F494A721B1AF3B00C9F50C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				79F4949F21B1AF1800C9F50C /* VC1.swift */,
-				79F494A021B1AF1800C9F50C /* VC1.xib */,
+				79F4949F21B1AF1800C9F50C /* WeatherTodayViewController.swift */,
+				79F494A021B1AF1800C9F50C /* WeatherTodayViewController.xib */,
 				79F494A321B1AF2C00C9F50C /* VC2.swift */,
 				79F494A421B1AF2C00C9F50C /* VC2.xib */,
 				79F494A821B1AF4F00C9F50C /* VC3.swift */,
@@ -245,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F494AB21B1AF4F00C9F50C /* VC3.xib in Resources */,
-				79F494A221B1AF1800C9F50C /* VC1.xib in Resources */,
+				79F494A221B1AF1800C9F50C /* WeatherTodayViewController.xib in Resources */,
 				79F4948A21B1AEBD00C9F50C /* LaunchScreen.storyboard in Resources */,
 				79F4948721B1AEBD00C9F50C /* Assets.xcassets in Resources */,
 				79F494A621B1AF2C00C9F50C /* VC2.xib in Resources */,
@@ -267,18 +279,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C084084021B2EBA700DBAFEA /* RoutingRule.swift in Sources */,
-				79F494A121B1AF1800C9F50C /* VC1.swift in Sources */,
+				79F494A121B1AF1800C9F50C /* WeatherTodayViewController.swift in Sources */,
 				C084084421B2EC7F00DBAFEA /* ApplicationView.swift in Sources */,
 				C084084D21B2F52A00DBAFEA /* ExclusiveRoutingRule.swift in Sources */,
 				C084084221B2EBD200DBAFEA /* LoginRoutingRule.swift in Sources */,
+				7935A1ED21C3C77300F29C92 /* WeatherTodayRouter.swift in Sources */,
+				7935A1F921C3D11D00F29C92 /* WeatherApiClient.swift in Sources */,
 				C084084621B2EF0700DBAFEA /* AnotherRouter.swift in Sources */,
 				79F494B921B2988700C9F50C /* Router.swift in Sources */,
+				7935A1EB21C3C6D100F29C92 /* ViewControllerFactory.swift in Sources */,
+				7935A1F721C3CEFB00F29C92 /* WeatherInteractor.swift in Sources */,
 				79F494BB21B2B1E100C9F50C /* UIViewController+Tag.swift in Sources */,
 				79F494B721B296BC00C9F50C /* PersonClient.swift in Sources */,
-				79F4948221B1AEBA00C9F50C /* VCStack.swift in Sources */,
 				C084083E21B2EB0A00DBAFEA /* RouterFactory.swift in Sources */,
 				79F494AA21B1AF4F00C9F50C /* VC3.swift in Sources */,
 				79F4948021B1AEBA00C9F50C /* AppDelegate.swift in Sources */,
+				7935A1EF21C3CC8A00F29C92 /* WeatherTodayPresenter.swift in Sources */,
 				C084084F21B2F5F500DBAFEA /* MainRoutingRule.swift in Sources */,
 				79F494B521B2968E00C9F50C /* Person.swift in Sources */,
 				79F494A521B1AF2C00C9F50C /* VC2.swift in Sources */,

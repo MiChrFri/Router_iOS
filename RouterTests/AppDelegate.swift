@@ -11,10 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         
         if let window = window {
-            let router = Router(window: window)
             window.makeKeyAndVisible()
-            
-            router.routeToVC3()
+            ViewControllerFactory(withWindow: window)
         }
         
         return true

@@ -24,6 +24,6 @@ class VC2: UIViewController {
     }
 
     @IBAction func next(_ sender: Any) {
-        router.routeToVC3()
+        //router.routeToVC3()
     }
 }
