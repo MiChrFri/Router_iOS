@@ -147,6 +147,16 @@
 			path = Irrelevant;
 			sourceTree = "<group>";
 		};
+		797FFC1921CA789C002CB46A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79F494A721B1AF3B00C9F50C /* Home */,
+				797FFC0821CA5278002CB46A /* WeatherCompare */,
+				797FFC0721CA524E002CB46A /* WeatherToday */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		79F4947321B1AEBA00C9F50C = {
 			isa = PBXGroup;
 			children = (
@@ -169,14 +179,12 @@
 			isa = PBXGroup;
 			children = (
 				797FFC0921CA52B2002CB46A /* WeatherData */,
-				797FFC0821CA5278002CB46A /* WeatherCompare */,
+				797FFC1921CA789C002CB46A /* Views */,
 				79F4947F21B1AEBA00C9F50C /* AppDelegate.swift */,
-				79F494A721B1AF3B00C9F50C /* Home */,
 				797FFC1421CA5C05002CB46A /* Irrelevant */,
 				79F4948B21B1AEBD00C9F50C /* Info.plist */,
-				79F494B821B2988700C9F50C /* Router.swift */,
-				797FFC0721CA524E002CB46A /* WeatherToday */,
 				7935A1EA21C3C6D100F29C92 /* ViewControllerFactory.swift */,
+				79F494B821B2988700C9F50C /* Router.swift */,
 				79F494BA21B2B1E100C9F50C /* UIViewController+Tag.swift */,
 			);
 			path = RouterTests;

@@ -11,14 +11,14 @@ extension HomeRouter: HomeRoutable {
         let wCVc = viewControllerFactory.createWeatherTodayViewController()
         viewControllerFactory.routesMap[.weatherToday] = wCVc.hashValue
         
-        routeToVc(vc: wCVc)
+        routeTo(viewController: wCVc)
     }
     
     func routeToWeatherCompare() {
         let wCVc = viewControllerFactory.createWeatherCompareViewController()
         viewControllerFactory.routesMap[.weatherCompare] = wCVc.hashValue
         
-        routeToVc(vc: wCVc)
+        routeTo(viewController: wCVc)
     }
 
 }

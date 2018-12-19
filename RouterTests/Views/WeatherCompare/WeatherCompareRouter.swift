@@ -8,7 +8,7 @@ class WeatherCompareRouter: Router {}
 extension WeatherCompareRouter: WeatherCompareRouteble {
     func dropToHome() {
         if let homeVc = getViewController(forTag: .home) {
-            dropToVc(vc: homeVc)
+            dropTo(viewCOntroller: homeVc)
         } else {
             routeToHome()
         }
@@ -18,13 +18,13 @@ extension WeatherCompareRouter: WeatherCompareRouteble {
         let homeVc = viewControllerFactory.createHomeViewController()
         viewControllerFactory.routesMap[.home] = homeVc.hashValue
         
-        routeToVc(vc: homeVc)
+        routeTo(viewController: homeVc)
     }
     
     func routeToWeatherToday() {
         let wTVc = viewControllerFactory.createWeatherTodayViewController()
         viewControllerFactory.routesMap[.weatherToday] = wTVc.hashValue
         
-        routeToVc(vc: wTVc)
+        routeTo(viewController: wTVc)
     }
 }

@@ -14,21 +14,21 @@ class Router {
         return viewControllerFactory.viewControllers.first(where: { $0.hashValue == viewControllerFactory.routesMap[tag] })
     }
     
-    func dropToVc(vc: UIViewController) {
+    func dropTo(viewCOntroller: UIViewController) {
         if let nav = window.rootViewController as? UINavigationController {
-            nav.popToViewController(vc, animated: true)
+            nav.popToViewController(viewCOntroller, animated: true)
         } else {
-            window.rootViewController = UINavigationController(rootViewController: vc)
+            window.rootViewController = UINavigationController(rootViewController: viewCOntroller)
         }
         
         updateViewControllerMap()
     }
     
-    func routeToVc(vc: UIViewController) {
+    func routeTo(viewController: UIViewController) {
         if let nav = window.rootViewController as? UINavigationController {
-            nav.pushViewController(vc, animated: true)
+            nav.pushViewController(viewController, animated: true)
         } else {
-            window.rootViewController = UINavigationController(rootViewController: vc)
+            window.rootViewController = UINavigationController(rootViewController: viewController)
         }
         
         updateViewControllerMap()
